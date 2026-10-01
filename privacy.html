@@ -6,6 +6,7 @@
 <ul>
 <li>Cloud Datastore (Firestore) data in the owner's Google Cloud projects. The authorization is broad, but the script currently reads only one project's data.</li>
 <li>Google Drive files and folders that the app itself creates (drive.file), used to store backup copies.</li>
+<li>Firebase administration scope (firebase), used to read the list of sign-in accounts (user ID, email, sign-in provider, timestamps) of the owner's own app for backup. The authorization is broad and covers Firebase settings across the owner's projects; the script reads only account records of one project and does not read or save password hashes.</li>
 <li>External requests and scheduled triggers, so it can run automatically.</li>
 </ul>
 <h2>How it is used</h2>
